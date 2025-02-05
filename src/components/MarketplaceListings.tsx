@@ -49,61 +49,61 @@ const listings = [
 
 export const MarketplaceListings = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#333333]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Active Market Opportunities
           </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4">
             Browse current data processing and robotics development opportunities from leading companies
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {listings.map((listing) => (
-            <Card key={listing.company} className="hover:shadow-xl transition-shadow duration-200">
+            <Card key={listing.company} className="bg-[#222222] border-[#444444] hover:border-[#1EAEDB] transition-all duration-200">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
-                    <Shield className="h-5 w-5 text-blue-500" />
-                    <span className="text-sm font-medium text-blue-500">IP Protected</span>
+                    <Shield className="h-5 w-5 text-[#1EAEDB]" />
+                    <span className="text-sm font-medium text-[#1EAEDB]">IP Protected</span>
                   </div>
                   <listing.icon className="h-6 w-6 text-gray-400" />
                 </div>
                 <div className="mt-4">
-                  <CardTitle className="text-xl font-bold">{listing.title}</CardTitle>
-                  <div className="text-sm font-medium text-gray-500 mt-1">{listing.company}</div>
+                  <CardTitle className="text-xl font-bold text-white">{listing.title}</CardTitle>
+                  <div className="text-sm font-medium text-gray-400 mt-1">{listing.company}</div>
                 </div>
-                <CardDescription className="mt-2">
+                <CardDescription className="mt-2 text-gray-300">
                   {listing.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-sm font-medium text-gray-500">Requirements:</h4>
-                    <ul className="mt-2 text-sm text-gray-600 space-y-1">
+                    <h4 className="text-sm font-medium text-gray-400">Requirements:</h4>
+                    <ul className="mt-2 text-sm text-gray-300 space-y-1">
                       {listing.requirements.map((req, index) => (
                         <li key={index} className="flex items-center">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+                          <span className="w-1.5 h-1.5 bg-[#1EAEDB] rounded-full mr-2" />
                           {req}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <div className="flex items-center text-gray-500">
+                    <div className="flex items-center text-gray-400">
                       <DollarSign className="h-4 w-4 mr-1" />
                       {listing.budget}
                     </div>
-                    <div className="flex items-center text-gray-500">
+                    <div className="flex items-center text-gray-400">
                       <Clock className="h-4 w-4 mr-1" />
                       {listing.deadline}
                     </div>
                   </div>
-                  <div className="flex flex-wrap gap-2 pt-4 border-t">
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-[#444444]">
                     {listing.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">
+                      <Badge key={tag} variant="secondary" className="bg-[#444444] text-gray-300 hover:bg-[#555555]">
                         {tag}
                       </Badge>
                     ))}
