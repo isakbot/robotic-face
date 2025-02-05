@@ -25,7 +25,7 @@ const labs = [
 
 export const FeaturedLabs = () => {
   return (
-    <section className="py-16 bg-[#f1f1f1]">
+    <section className="py-16 bg-[#F1F0FB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-2xl font-normal text-[#222222]">
@@ -37,10 +37,10 @@ export const FeaturedLabs = () => {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {labs.map((lab) => (
-            <Card key={lab.name} className="bg-[#fff] border-[#eee] hover:border-[#222222] transition-all duration-200">
+            <Card key={lab.name} className="bg-[#FDE1D3] border-[#eee] hover:border-[#222222] transition-all duration-200">
               <CardHeader>
                 <div className="flex items-center space-x-4">
-                  <div className="p-2 bg-[#f1f0fb] rounded-lg">
+                  <div className="p-2 bg-[#F1F0FB] rounded-lg">
                     <lab.icon className="h-5 w-5 text-[#222222]" />
                   </div>
                   <div>
@@ -52,7 +52,7 @@ export const FeaturedLabs = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {lab.expertise.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="bg-[#f1f0fb] text-[#222222] hover:bg-[#eee]">
+                    <Badge key={tag} variant="secondary" className="bg-[#F1F0FB] text-[#222222] hover:bg-[#eee]">
                       {tag}
                     </Badge>
                   ))}
