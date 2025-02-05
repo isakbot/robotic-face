@@ -1,13 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Robot, Database, Cpu } from "lucide-react";
+import { Bot from "lucide-react";
 
 const labs = [
   {
     name: "AutoNav Robotics Lab",
     description: "Specializing in autonomous navigation and SLAM algorithms",
     expertise: ["Navigation", "SLAM", "Sensor Fusion"],
-    icon: Robot,
+    icon: Bot,
   },
   {
     name: "DataRobotics Research",
