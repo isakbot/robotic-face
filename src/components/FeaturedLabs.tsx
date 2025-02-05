@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Bot from "lucide-react";
+import { Bot, Database, Cpu } from "lucide-react";
 
 const labs = [
   {
