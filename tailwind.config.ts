@@ -68,8 +68,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        mono: ["Roboto Mono", "monospace"],
+        sans: ["Courier New", "monospace"],
+        mono: ["Courier New", "monospace"],
       },
       keyframes: {
         "accordion-down": {

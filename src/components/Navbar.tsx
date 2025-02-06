@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (
-    <nav className="bg-[#fff] border-b border-[#eee]">
+    <nav className="bg-[#FDE1D3] border-b border-[#eee]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -35,7 +35,7 @@ export const Navbar = () => {
             <Button variant="ghost" size="icon" className="mr-2 text-[#333333] hover:text-[#222222]">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="default" className="ml-2 bg-[#222222] hover:bg-[#333333] text-[#f1f1f1]">
+            <Button variant="default" className="ml-2 bg-[#222222] hover:bg-[#333333] text-[#FDE1D3]">
               Sign In
             </Button>
           </div>
