@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Bot, Database, Cpu, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const labs = [
   {
@@ -80,7 +81,7 @@ export const FeaturedLabs = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#F1F0FB]">
+      <section className="py-16 bg-[#FDE1D3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-2xl font-normal text-[#222222]">
@@ -103,6 +104,14 @@ export const FeaturedLabs = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link 
+              to="/enterprise-guide" 
+              className="inline-block text-[#222222] hover:underline"
+            >
+              View Full Enterprise Guide →
+            </Link>
           </div>
         </div>
       </section>
