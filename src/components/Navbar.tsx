@@ -25,6 +25,12 @@ export const Navbar = () => {
                 Market
               </Link>
               <Link
+                to="/app-store"
+                className={`${isActiveRoute("/app-store")} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-mono`}
+              >
+                App Store
+              </Link>
+              <Link
                 to="#"
                 className="border-transparent text-[#333333] hover:text-[#222222] hover:border-[#222222] inline-flex items-center px-1 pt-1 border-b-2 text-sm font-mono"
               >
