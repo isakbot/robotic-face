@@ -6,10 +6,10 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative">
         <div className="text-center">
           <h1 className="text-3xl font-normal text-[#222222] sm:text-4xl">
-            Robotics Innovation Marketplace
+            Fine-tuning on Demand
           </h1>
           <p className="mt-6 max-w-md mx-auto text-base text-[#333333] sm:text-lg">
-            Connect with leading labs. Access data, models, hardware expertise.
+            We enable brand-specific and community-driven apps for autonomous robots through our marketplace.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button className="bg-[#222222] text-[#FDE1D3] hover:bg-[#333333]">
